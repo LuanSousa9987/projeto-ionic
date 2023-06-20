@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>productPerfil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">productPerfil</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card>
+    <img [alt]="'foto do produto '+product.nome" src="https://images.kabum.com.br/produtos/fotos/433421/notebook-gamer-acer-nitro-amd-ryzen-5-5600h-8gb-ram-geforce-gtx-1650-512gb-ssd-15-6-full-hd-windows-11-preto-an515-45-r91a_1678892068_gg.jpg" />
+    <ion-card-header>
+      <ion-card-title>{{product.nome}}</ion-card-title>
+      <ion-card-subtitle>{{product.valor}}</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      {{product.descricao}}
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
